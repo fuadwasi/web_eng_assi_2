@@ -1,0 +1,303 @@
+<!-- Price box minimal-->
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+
+    @media (min-width: 1200px) #table_head {
+      font-size: 36px;
+      line-height: 1.36111;
+      padding-top: 100px;
+    }
+
+    #fun {
+      padding: 0px;
+      margin-bottom: 30px;
+    }
+
+    #diu #login_but {
+      color: yellow;
+    }
+
+    #diu {
+      margin-top: 30px;
+    }
+
+    #login_but {
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"></a></div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading... </p>
+    </div>
+  </div><a class="section section-banner d-none d-xl-block"
+    href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank" style=" "></a>
+  <div class="page">
+    <!-- Page Header-->
+    <header class="section page-header">
+      <!-- RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-wide" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+          data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a class="brand" href="#"><img class="brand-logo-dark"
+                      src="images/cpc 160x44.png" alt="" width="261" height="72" srcset="images/cpc 160x44.png 2x" />
+                    <img class="brand-logo-light" src="images/cpc 160x44.png" alt="" width="133" height="45"
+                      srcset="images/cpc 160x44.png 2x" /></a>
+                </div>
+              </div>
+              <div class="rd-navbar-nav-wrap">
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="rd-nav-item "><a class="rd-nav-link" href="Currency.html">Currency Converter</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="fortune.html">Fortune Generator</a>
+                  </li>
+                  <li class="rd-nav-item active"><a class="rd-nav-link" href="quiz.html">Quiz</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Preview section-->
+    <section class="section context-dark bg-image bg-mask bg-mask-2 section-fullheight section-90vh">
+      <div class="jumbotron-custom wow fadeInRight">
+
+        <img src="images/qbg.png"></image>
+      </div>
+
+    </section>
+    <!-- EVERY PROJECT-->
+    <h4 id='table_head' style="padding-top: 2%;">
+      <center>Quiz<center>
+    </h4>
+
+
+
+    <div class="row mb-5 alert-info" style="padding-top: 15px; padding-bottom: 15px;">
+      <div class="col-md-11 mx-auto">
+
+          <div class="row">
+            <div class="form-group col-md-12">
+              <label for="fort">Question</label>
+              <textarea class="form-control" rows="2" id="question" disabled></textarea>
+            </div>
+            <div class="form-group col-md-4">
+                <button class="button button-default" id="answerA" onclick="answerA_clicked()"></button>
+              </div>
+              <div class="form-group col-md-4">
+                <button class="button button-default" id="answerB" onclick="answerB_clicked()"></button>
+              </div>
+              <div class="form-group col-md-4">
+                <button class="button button-default" id="answerC" onclick="answerC_clicked()"></button>
+              </div>
+
+
+
+            <div class="col-md-3 " style="margin-top: 5%; margin-bottom: 5%;" disabled>
+
+                <h3 name="score" class="form-control">Your score: <span id="score" ></span> </h3>
+
+            </div>
+
+
+          </div>
+      </div>
+    </div>
+
+
+    <script>
+
+
+      var quiz = [];
+      quiz[0] = new Question("What is the name of your country?", "Bangladesh", "India", "Pakistan");
+      quiz[1] = new Question("What is the correct answer of (1+1)*2?", "4", "2", "0");
+      quiz[2] = new Question("What is the full form of html?", "Hypertext Markup Language", "Hypertext Maker Language", "Highlevel Markup Language");
+      quiz[3] = new Question("What is the national animal of your country?", "Royal Bengal Tiger", "Lion", "Zebra");
+      quiz[4] = new Question("What is the full form of CSE?", "Computer Science Engineering", "Common Science Engin", "Nothing");
+      quiz[5] = new Question("What is the correct answer of 2+2?", "4", "0", "10");
+      quiz[6] = new Question("What is the capital of your country?", "Dhaka", "Rajshahi", "Khulna");
+      quiz[7] = new Question("Who are you?", "Developer", "Nothing", "Robot");
+      quiz[8] = new Question("Correct answer of 5*1?", "5", "50", "10");
+      var randomQuestion;
+      var answers = [];
+      var currentScore = 0;
+
+      document.addEventListener("DOMContentLoaded", function (event) {
+        btnProvideQuestion();
+      });
+
+      function Question(question, rightAnswer, wrongAnswer1, wrongAnswer2) {
+        this.question = question;
+        this.rightAnswer = rightAnswer;
+        this.wrongAnswer1 = wrongAnswer1;
+        this.wrongAnswer2 = wrongAnswer2;
+      };
+
+      function shuffle(o) {
+        for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+        return o;
+      };
+
+      function btnProvideQuestion() {
+
+        var randomNumber = Math.floor(Math.random() * quiz.length);
+        randomQuestion = quiz[randomNumber]; //getQuestion
+        answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
+        shuffle(answers);
+
+        document.getElementById("question").innerHTML = randomQuestion.question;
+        document.getElementById("answerA").value = answers[0];
+        document.getElementById("answerA").innerHTML = answers[0];
+        document.getElementById("answerB").value = answers[1];
+        document.getElementById("answerB").innerHTML = answers[1];
+        document.getElementById("answerC").value = answers[2];
+        document.getElementById("answerC").innerHTML = answers[2];
+        document.getElementById("answerC").value = answers[2];
+        document.getElementById("answerC").innerHTML = answers[2];
+
+      }
+
+      function answerA_clicked() {
+        var answerA = document.getElementById("answerA").value;
+        checkAnswer(answerA);
+      }
+
+      function answerB_clicked() {
+        var answerB = document.getElementById("answerB").value;
+        checkAnswer(answerB);
+      }
+      function answerC_clicked() {
+        var answerC = document.getElementById("answerC").value;
+        checkAnswer(answerC);
+      }
+
+      function adjustScore(isCorrect) {
+        debugger;
+        if (isCorrect) {
+          currentScore++;
+        } else {
+          if (currentScore > 0) {
+            currentScore--;
+          }
+        }
+        document.getElementById("score").innerHTML = currentScore;
+      }
+
+      function checkAnswer(answer) {
+        if (answer == randomQuestion.rightAnswer) {
+          adjustScore(true);
+          btnProvideQuestion();
+        } else {
+          alert("Loser!");
+          adjustScore(false);
+        }
+      }
+    </script>
+
+
+
+
+    <div class="pre-footer-classic bg-gray-700 context-dark">
+      <div class="container">
+        <div class="row row-30 justify-content-lg-between">
+          <div class="col-sm-6 col-lg-3 col-xl-3">
+            <h5>Location</h5>
+            <ul class="list list-sm">
+              <li>
+                <p>Dhanmondi</p>
+              </li>
+              <li>
+                <p>Dhaka-1205</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <h5>Contacts</h5>
+            <dl class="list-terms-custom">
+              <dt>Ph.</dt>
+              <dd><a class="link-default" href="tel:#">+880-1792-478-378</a></dd>
+            </dl>
+            <dl class="list-terms-custom">
+              <dt>Mail.</dt>
+              <dd><a class="link-default" href="mailto:#">fuad15-9400@diu.edu.bd</a></dd>
+            </dl>
+            <ul class="list-inline list-inline-sm">
+              <li><a class="icon icon-sm icon-gray-filled icon-circle mdi mdi-facebook" href="fb.com/fhwasi"></a></li>
+              <li><a class="icon icon-sm icon-gray-filled icon-circle mdi mdi-instagram" href="https://www.instagram.com/fhwasi/"></a></li>
+              <li><a class="icon icon-sm icon-gray-filled icon-circle mdi mdi-twitter" href="https://twitter.com/fuadhasanwasi"></a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <footer class="section footer-classic context-dark text-center">
+      <div class="container">
+        <div class="row row-15 justify-content-lg-between">
+          <div class="col-lg-6 col-xl-6 text-lg-left">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved.</p>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/fortune.js"></script>
+
+</body>
+
+</html>
